@@ -1,63 +1,8 @@
 <!DOCTYPE html> 
 <html> 
-	<style>
-		.top{
-			position:relative;
-			text-align: center;
-			margin: 350px 400px 0px 400px;
-		}
-		.title{
-			padding-bottom: 0px;
-			margin-top: 0px;
-			margin-bottom: 100px;
-		}
-		.box1{
-			position:relative;
-			margin-right: 20vw;
-			text-align: center;
-			margin: 0px 400px 0px 400px;
-		}
-		.box2{
-			position:relative;
-			margin-right: 20vw;
-			text-align: center;
-			margin: 0px 400px 0px 400px;
-		}
-		.box3{
-			position:relative;
-			margin-right: 20vw;
-			text-align: center;
-			margin: 0px 400px 0px 400px;
-		}
-		.box4{
-			position:relative;
-			margin-right: 20vw;
-			text-align: center;
-			margin: 0px 400px 400px 400px;
-		}
-		.searchy{
-			background-color: #ddd;
-			border: none;
-			color: black;
-			padding: 10px 50px 10px 10px;
-			text-decoration: none;
-			display: inline-block;
-			margin: 4px 2px;
-			border-radius: 16px;
-		}
-		
-		body {
-			background: url(https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_960_720.jpg);
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-	</style>
-<head> 
-	<title> 
 
-	</title> 
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='webpage.css')}}">
 </head> 
 
 
@@ -65,26 +10,15 @@
 	<div class="top">
 		<p class="title"> COVID SAFETY SEARCH </p>
 	</div>
-	<!--
-	<div class="box1">
-    		<input class="searchy" id="searchbar" type="text" name="search" placeholder="Where are you leaving from?"> 
-    	</div>	
-    	<div class="box2">	
-    		<input class="searchy" id="searchbar" type="text" name="search" placeholder="Where are you going to?">
-    	</div>	
-    	<div class="box3">	
-    		<input class="searchy" id="searchbar" type="text" name="search" placeholder="When are you leaving? (M/D/Y)">
-    	</div>	
-    	<div class="box4">	
-    		<input class="searchy" id="searchbar" type="text" name="search" placeholder="When are you coming back? (M/D/Y)">
-        </div> -->
 
 	<form method="POST" id="tickets-form">
-		<div class="form-input">{{form.current_city.label}} {{form.current_city}}</div>
-		<div class="form-input">{{form.destination_location.label}} {{form.destination_location}}</div>
-		<div class="form-input">{{form.leave.label}} {{form.leave}}</div>
-		<div class="form-input">{{form.returning.label}} {{form.returning}}</div>
-		<div class="form-input">{{form.submit_button}}</div>
+		<div class="form-group">
+			<div class="form-input">{{form.current_city}}</div>
+			<div class="form-input">{{form.destination_location}}</div>
+			<div class="form-input">{{form.leave}}</div>
+			<div class="form-input">{{form.returning}}</div>
+			<div class="form-input btn btn-success">{{form.submit_button}}</div>
+		</div>
 
 	</form>
 {% endblock %}

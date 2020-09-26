@@ -1,0 +1,58 @@
+.top{
+    position:relative;
+    text-align: center;
+    margin: 350px 400px 0px 400px;
+}
+.title{
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.box1{
+    position:relative;
+    margin-right: 20vw;
+    text-align: center;
+    margin: 0px 400px 0px 400px;
+}
+.box2{
+    position:relative;
+    margin-right: 20vw;
+    text-align: center;
+    margin: 0px 400px 0px 400px;
+}
+.box3{
+    position:relative;
+    margin-right: 20vw;
+    text-align: center;
+    margin: 0px 400px 0px 400px;
+}
+.box4{
+    position:relative;
+    margin-right: 20vw;
+    text-align: center;
+    margin: 0px 400px 400px 400px;
+}
+.searchy{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 50px 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+body {
+    background: url(https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-input{
+    display: block;
+    text-align: center;
+    margin-bottom: 1%;
+}
