@@ -1,25 +1,35 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="en">
 
 <head>
+
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='webpage.css')}}">
-</head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<title>COVID SAFETY SEARCH</title>
+
+</head>
 
 
 {% block content%}
-	<div class="top">
-		<p class="title"> COVID SAFETY SEARCH </p>
+
+	<h1>Covid Safety Search</h1>
+
+	<div class="container">
+
+		<form method="POST" id="tickets-form">
+			<div class="form-input">{{form.current_city.label}} {{form.current_city}}</div>
+			<div class="form-input">{{form.destination_location.label}} {{form.destination_location}}</div>
+			<div class="form-input">{{form.leave.label}} {{form.leave}}</div>
+			<div class="form-input">{{form.returning.label}} {{form.returning}}</div>
+			<div class="form-input">{{form.submit_button}}</div>
+
+		</form>
+
 	</div>
-
-	<form method="POST" id="tickets-form">
-		<div class="form-group">
-			<div class="form-input">{{form.current_city}}</div>
-			<div class="form-input">{{form.destination_location}}</div>
-			<div class="form-input">{{form.leave}}</div>
-			<div class="form-input">{{form.returning}}</div>
-			<div class="form-input btn btn-success">{{form.submit_button}}</div>
-		</div>
-
-	</form>
 {% endblock %}
 </html> 
