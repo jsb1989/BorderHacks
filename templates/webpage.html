@@ -59,11 +59,13 @@
 
 	</title> 
 </head> 
-  
-<body> 
+
+
+{% block content%}
 	<div class="top">
 		<p class="title"> COVID SAFETY SEARCH </p>
 	</div>
+	<!--
 	<div class="box1">
     		<input class="searchy" id="searchbar" type="text" name="search" placeholder="Where are you leaving from?"> 
     	</div>	
@@ -75,7 +77,15 @@
     	</div>	
     	<div class="box4">	
     		<input class="searchy" id="searchbar" type="text" name="search" placeholder="When are you coming back? (M/D/Y)">
-        </div> 
-</body> 
-  
+        </div> -->
+
+	<form method="POST" id="tickets-form">
+		<div class="form-input">{{form.current_city.label}} {{form.current_city}}</div>
+		<div class="form-input">{{form.destination_location.label}} {{form.destination_location}}</div>
+		<div class="form-input">{{form.leave.label}} {{form.leave}}</div>
+		<div class="form-input">{{form.returning.label}} {{form.returning}}</div>
+		<div class="form-input">{{form.submit_button}}</div>
+
+	</form>
+{% endblock %}
 </html> 
