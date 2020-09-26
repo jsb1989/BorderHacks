@@ -14,22 +14,20 @@
 
 </head>
 
-
 {% block content%}
+	<div class="top">
+		<p class="title"> COVID SAFETY SEARCH </p>
+	</div>
 
-	<h1>Covid Safety Search</h1>
-
-	<div class="container">
-
-		<form method="POST" id="tickets-form">
-			<div class="form-input">{{form.current_city.label}} {{form.current_city}}</div>
-			<div class="form-input">{{form.destination_location.label}} {{form.destination_location}}</div>
-			<div class="form-input">{{form.leave.label}} {{form.leave}}</div>
-			<div class="form-input">{{form.returning.label}} {{form.returning}}</div>
+	<form method="POST" id="tickets-form">
+		<div class="form-group">
+			<div class="form-input">{{form.current_city}}</div>
+			<div class="form-input">{{form.destination_location}}</div>
+			<div class="form-input">{{form.leave}}</div>
+			<div class="form-input">{{form.returning}}</div>
+			<!--<input type='button' formmethod="post" class="form-input btn btn-success">{{form.submit_button}}</input>-->
 			<div class="form-input">{{form.submit_button}}</div>
 
-		</form>
-
-	</div>
+	</form>
 {% endblock %}
 </html> 
