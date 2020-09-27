@@ -20,14 +20,12 @@
 	</div>
 
 	<form method="POST" id="tickets-form">
-		<div class="form-group">
-			<div class="form-input">{{form.current_city}}</div>
-			<div class="form-input">{{form.destination_location}}</div>
-			<div class="form-input">{{form.leave}}</div>
-			<div class="form-input">{{form.returning}}</div>
-			<!--<input type='button' formmethod="post" class="form-input btn btn-success">{{form.submit_button}}</input>-->
-			<div class="form-input">{{form.submit_button}}</div>
-
+		<div class="form-input">{{form.current_city}}</div>
+		<div class="form-input">{{form.destination_location}}</div>
+		<div class="form-input">{{form.leave}}</div>
+		<div class="form-input">{{form.returning}}</div>
+		<!--<div class="form-input">{{form.submit_button}}</div>-->
+		<button class="form-input btn btn-success" id="submit-button" formmethod="post">Find A Ticket</button>
 	</form>
 {% endblock %}
 </html> 
