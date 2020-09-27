@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='resultpage.css')}}">
+    <title>Prices</title>
+</head>
+<body>
+    <h1 style="margin-bottom:0px;">Results</h1>
+    	<div class="container">
+    		<div class="resultbox">	
+			<textarea readonly id="results" name="results" rows="20" cols="70"></textarea>
+		</div>
+		<div class="back">
+			<input type="button" class="button" value="BACK" onclick="history.back(-1)" />
+		</div>
+	</div>	
+</body>
+</html>
