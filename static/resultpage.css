@@ -1,0 +1,26 @@
+h1{
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 7vw;
+	padding: 0px;
+}
+#results{
+	background: rgb(245 240 240 / 42%);
+	resize: none;
+}
+.resultbox{
+	text-align: center;
+}
+.back{
+	text-align: center;
+}
+.button{
+	border-radius: 16px;
+}
+body{
+	background: url(https://cdn.pixabay.com/photo/2020/02/07/17/52/new-zealand-4827881_960_720.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
