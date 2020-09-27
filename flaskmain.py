@@ -11,6 +11,11 @@ Bootstrap(app)
 def homepage():
     ticketform = TicketForm()
     if request.method == "POST":
+        departure_location = request.form['current_city']
+        destination = request.form['destination_location']
+        departure_date = request.form['leave']
+        return_date = request.form['returning']
+
         return redirect(url_for('pricespage'))
     return render_template('webpage.html', form=ticketform)
 
